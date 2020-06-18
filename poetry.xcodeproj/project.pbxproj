@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		600BFB76BD13120D4E6259A4 /* Pods_poetry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AB0B0D53086A4FD0F171C2 /* Pods_poetry.framework */; };
+		CF4E2C74249B42850032727C /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4E2C73249B42840032727C /* UIScrollView+EmptyDataSet.m */; };
+		CF69B2B8233C4BF1005C7339 /* TagSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF69B2B7233C4BF1005C7339 /* TagSearchViewController.m */; };
+		CF69B2BC233C5A46005C7339 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF69B2BA233C5A46005C7339 /* DetailsViewController.m */; };
+		CFA605072339B20E00199B66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA605062339B20E00199B66 /* AppDelegate.m */; };
+		CFA6050D2339B20E00199B66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA6050B2339B20E00199B66 /* Main.storyboard */; };
+		CFA6050F2339B20E00199B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA6050E2339B20E00199B66 /* Assets.xcassets */; };
+		CFA605122339B20E00199B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA605102339B20E00199B66 /* LaunchScreen.storyboard */; };
+		CFA605152339B20E00199B66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA605142339B20E00199B66 /* main.m */; };
+		CFA6051D2339BA5700199B66 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA6051C2339BA5700199B66 /* HomeViewController.m */; };
+		CFA605202339BBAA00199B66 /* PoetryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA6051F2339BBAA00199B66 /* PoetryViewController.m */; };
+		CFA605232339C83100199B66 /* SCIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA605222339C83100199B66 /* SCIViewController.m */; };
+		CFA605262339C85D00199B66 /* TagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA605252339C85D00199B66 /* TagViewController.m */; };
+		CFA6052A2339F06900199B66 /* shici.db in Resources */ = {isa = PBXBuildFile; fileRef = CFA605292339F06900199B66 /* shici.db */; };
+		CFA6052F2339F0BC00199B66 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA6052E2339F0BC00199B66 /* DBManager.m */; };
+		CFA60535233A10F300199B66 /* Base.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA60534233A10F300199B66 /* Base.m */; };
+		CFA60538233A148800199B66 /* Poem.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA60537233A148800199B66 /* Poem.m */; };
+		CFA6053B233A159500199B66 /* Ci.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA6053A233A159500199B66 /* Ci.m */; };
+		CFA6053E233A1B0E00199B66 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA6053D233A1B0E00199B66 /* Author.m */; };
+		CFEA5904233B43C5008BAD54 /* BasePeomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEA5902233B43C5008BAD54 /* BasePeomCell.m */; };
+		CFEA5905233B43C5008BAD54 /* BasePeomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFEA5903233B43C5008BAD54 /* BasePeomCell.xib */; };
+		CFF98118233B72D60056810F /* BaseTableViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF98117233B72D60056810F /* BaseTableViewControler.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84E4B65AA6347DE879D9328B /* Pods-poetry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-poetry.debug.xcconfig"; path = "Target Support Files/Pods-poetry/Pods-poetry.debug.xcconfig"; sourceTree = "<group>"; };
+		91A013ADAD2A1065D56C928F /* Pods-poetry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-poetry.release.xcconfig"; path = "Target Support Files/Pods-poetry/Pods-poetry.release.xcconfig"; sourceTree = "<group>"; };
+		CF4E2C72249B42840032727C /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		CF4E2C73249B42840032727C /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
+		CF69B2B6233C4BF1005C7339 /* TagSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagSearchViewController.h; sourceTree = "<group>"; };
+		CF69B2B7233C4BF1005C7339 /* TagSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TagSearchViewController.m; sourceTree = "<group>"; };
+		CF69B2B9233C5A46005C7339 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		CF69B2BA233C5A46005C7339 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		CFA605022339B20E00199B66 /* poetry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = poetry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA605052339B20E00199B66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CFA605062339B20E00199B66 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CFA6050C2339B20E00199B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFA6050E2339B20E00199B66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFA605112339B20E00199B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFA605132339B20E00199B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFA605142339B20E00199B66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CFA6051B2339BA5700199B66 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		CFA6051C2339BA5700199B66 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		CFA6051E2339BBAA00199B66 /* PoetryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoetryViewController.h; sourceTree = "<group>"; };
+		CFA6051F2339BBAA00199B66 /* PoetryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoetryViewController.m; sourceTree = "<group>"; };
+		CFA605212339C83100199B66 /* SCIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCIViewController.h; sourceTree = "<group>"; };
+		CFA605222339C83100199B66 /* SCIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCIViewController.m; sourceTree = "<group>"; };
+		CFA605242339C85D00199B66 /* TagViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagViewController.h; sourceTree = "<group>"; };
+		CFA605252339C85D00199B66 /* TagViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TagViewController.m; sourceTree = "<group>"; };
+		CFA605272339E7B900199B66 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CFA605292339F06900199B66 /* shici.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = shici.db; sourceTree = "<group>"; };
+		CFA6052D2339F0BC00199B66 /* DBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		CFA6052E2339F0BC00199B66 /* DBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		CFA60533233A10F300199B66 /* Base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base.h; sourceTree = "<group>"; };
+		CFA60534233A10F300199B66 /* Base.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base.m; sourceTree = "<group>"; };
+		CFA60536233A148800199B66 /* Poem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Poem.h; sourceTree = "<group>"; };
+		CFA60537233A148800199B66 /* Poem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Poem.m; sourceTree = "<group>"; };
+		CFA60539233A159500199B66 /* Ci.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ci.h; sourceTree = "<group>"; };
+		CFA6053A233A159500199B66 /* Ci.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ci.m; sourceTree = "<group>"; };
+		CFA6053C233A1B0E00199B66 /* Author.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Author.h; sourceTree = "<group>"; };
+		CFA6053D233A1B0E00199B66 /* Author.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Author.m; sourceTree = "<group>"; };
+		CFEA5901233B43C5008BAD54 /* BasePeomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasePeomCell.h; sourceTree = "<group>"; };
+		CFEA5902233B43C5008BAD54 /* BasePeomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasePeomCell.m; sourceTree = "<group>"; };
+		CFEA5903233B43C5008BAD54 /* BasePeomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasePeomCell.xib; sourceTree = "<group>"; };
+		CFF98116233B72D60056810F /* BaseTableViewControler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewControler.h; sourceTree = "<group>"; };
+		CFF98117233B72D60056810F /* BaseTableViewControler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewControler.m; sourceTree = "<group>"; };
+		F2AB0B0D53086A4FD0F171C2 /* Pods_poetry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_poetry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFA604FF2339B20D00199B66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				600BFB76BD13120D4E6259A4 /* Pods_poetry.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BEC07DCA6B3FBB0DCB2A791 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2AB0B0D53086A4FD0F171C2 /* Pods_poetry.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCF0161459D745E365488B57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84E4B65AA6347DE879D9328B /* Pods-poetry.debug.xcconfig */,
+				91A013ADAD2A1065D56C928F /* Pods-poetry.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CFA604F92339B20D00199B66 = {
+			isa = PBXGroup;
+			children = (
+				CFA605042339B20E00199B66 /* poetry */,
+				CFA605032339B20E00199B66 /* Products */,
+				CCF0161459D745E365488B57 /* Pods */,
+				4BEC07DCA6B3FBB0DCB2A791 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CFA605032339B20E00199B66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFA605022339B20E00199B66 /* poetry.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFA605042339B20E00199B66 /* poetry */ = {
+			isa = PBXGroup;
+			children = (
+				CFA6052C2339F09D00199B66 /* db */,
+				CFA605282339E7C600199B66 /* ui */,
+				CFA605052339B20E00199B66 /* AppDelegate.h */,
+				CFA605062339B20E00199B66 /* AppDelegate.m */,
+				CF4E2C72249B42840032727C /* UIScrollView+EmptyDataSet.h */,
+				CF4E2C73249B42840032727C /* UIScrollView+EmptyDataSet.m */,
+				CFA6051B2339BA5700199B66 /* HomeViewController.h */,
+				CFA6051C2339BA5700199B66 /* HomeViewController.m */,
+				CFA605272339E7B900199B66 /* PrefixHeader.pch */,
+				CFA6050E2339B20E00199B66 /* Assets.xcassets */,
+				CFA6050B2339B20E00199B66 /* Main.storyboard */,
+				CFA605102339B20E00199B66 /* LaunchScreen.storyboard */,
+				CFA605292339F06900199B66 /* shici.db */,
+				CFA605132339B20E00199B66 /* Info.plist */,
+				CFA605142339B20E00199B66 /* main.m */,
+			);
+			path = poetry;
+			sourceTree = "<group>";
+		};
+		CFA605282339E7C600199B66 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				CFF98116233B72D60056810F /* BaseTableViewControler.h */,
+				CFF98117233B72D60056810F /* BaseTableViewControler.m */,
+				CFA6051E2339BBAA00199B66 /* PoetryViewController.h */,
+				CFA6051F2339BBAA00199B66 /* PoetryViewController.m */,
+				CFA605242339C85D00199B66 /* TagViewController.h */,
+				CFA605252339C85D00199B66 /* TagViewController.m */,
+				CF69B2B6233C4BF1005C7339 /* TagSearchViewController.h */,
+				CF69B2B7233C4BF1005C7339 /* TagSearchViewController.m */,
+				CFA605212339C83100199B66 /* SCIViewController.h */,
+				CFA605222339C83100199B66 /* SCIViewController.m */,
+				CFEA5901233B43C5008BAD54 /* BasePeomCell.h */,
+				CFEA5902233B43C5008BAD54 /* BasePeomCell.m */,
+				CFEA5903233B43C5008BAD54 /* BasePeomCell.xib */,
+				CF69B2B9233C5A46005C7339 /* DetailsViewController.h */,
+				CF69B2BA233C5A46005C7339 /* DetailsViewController.m */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		CFA6052C2339F09D00199B66 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				CFA6052D2339F0BC00199B66 /* DBManager.h */,
+				CFA6052E2339F0BC00199B66 /* DBManager.m */,
+				CFA60533233A10F300199B66 /* Base.h */,
+				CFA60534233A10F300199B66 /* Base.m */,
+				CFA60536233A148800199B66 /* Poem.h */,
+				CFA60537233A148800199B66 /* Poem.m */,
+				CFA6053C233A1B0E00199B66 /* Author.h */,
+				CFA6053D233A1B0E00199B66 /* Author.m */,
+				CFA60539233A159500199B66 /* Ci.h */,
+				CFA6053A233A159500199B66 /* Ci.m */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFA605012339B20D00199B66 /* poetry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFA605182339B20E00199B66 /* Build configuration list for PBXNativeTarget "poetry" */;
+			buildPhases = (
+				A8F6B12D5FD45667DFEE9106 /* [CP] Check Pods Manifest.lock */,
+				CFA604FE2339B20D00199B66 /* Sources */,
+				CFA604FF2339B20D00199B66 /* Frameworks */,
+				CFA605002339B20D00199B66 /* Resources */,
+				F8A4E534F11F3687C040857E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = poetry;
+			productName = poetry;
+			productReference = CFA605022339B20E00199B66 /* poetry.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFA604FA2339B20D00199B66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = qunlivideo;
+				TargetAttributes = {
+					CFA605012339B20D00199B66 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = CFA604FD2339B20D00199B66 /* Build configuration list for PBXProject "poetry" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFA604F92339B20D00199B66;
+			productRefGroup = CFA605032339B20E00199B66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFA605012339B20D00199B66 /* poetry */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFA605002339B20D00199B66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFA6052A2339F06900199B66 /* shici.db in Resources */,
+				CFEA5905233B43C5008BAD54 /* BasePeomCell.xib in Resources */,
+				CFA605122339B20E00199B66 /* LaunchScreen.storyboard in Resources */,
+				CFA6050F2339B20E00199B66 /* Assets.xcassets in Resources */,
+				CFA6050D2339B20E00199B66 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8F6B12D5FD45667DFEE9106 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-poetry-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8A4E534F11F3687C040857E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-poetry/Pods-poetry-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-poetry/Pods-poetry-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-poetry/Pods-poetry-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFA604FE2339B20D00199B66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFA6052F2339F0BC00199B66 /* DBManager.m in Sources */,
+				CFEA5904233B43C5008BAD54 /* BasePeomCell.m in Sources */,
+				CFA605232339C83100199B66 /* SCIViewController.m in Sources */,
+				CFA605152339B20E00199B66 /* main.m in Sources */,
+				CFA605072339B20E00199B66 /* AppDelegate.m in Sources */,
+				CFA60535233A10F300199B66 /* Base.m in Sources */,
+				CF69B2BC233C5A46005C7339 /* DetailsViewController.m in Sources */,
+				CFA605202339BBAA00199B66 /* PoetryViewController.m in Sources */,
+				CFA6053E233A1B0E00199B66 /* Author.m in Sources */,
+				CFA60538233A148800199B66 /* Poem.m in Sources */,
+				CFF98118233B72D60056810F /* BaseTableViewControler.m in Sources */,
+				CFA6051D2339BA5700199B66 /* HomeViewController.m in Sources */,
+				CFA605262339C85D00199B66 /* TagViewController.m in Sources */,
+				CFA6053B233A159500199B66 /* Ci.m in Sources */,
+				CF4E2C74249B42850032727C /* UIScrollView+EmptyDataSet.m in Sources */,
+				CF69B2B8233C4BF1005C7339 /* TagSearchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CFA6050B2339B20E00199B66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFA6050C2339B20E00199B66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFA605102339B20E00199B66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFA605112339B20E00199B66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFA605162339B20E00199B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CFA605172339B20E00199B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFA605192339B20E00199B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E4B65AA6347DE879D9328B /* Pods-poetry.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RPG574377N;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = poetry/PrefixHeader.pch;
+				INFOPLIST_FILE = poetry/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				NEW_SETTING = "";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/IQKeyboardManager\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"-DIOS",
+					"-DX264_ENC",
+					"-DCMAD_BUILD_LIBRARY",
+					"-DIOS",
+					"-DNS_BLOCK_ASSERTIONS=1",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baicq.poetry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFA6051A2339B20E00199B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91A013ADAD2A1065D56C928F /* Pods-poetry.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RPG574377N;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = poetry/PrefixHeader.pch;
+				INFOPLIST_FILE = poetry/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				NEW_SETTING = "";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/FMDB\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/IQKeyboardManager\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"-DIOS",
+					"-DX264_ENC",
+					"-DCMAD_BUILD_LIBRARY",
+					"-DIOS",
+					"-DNS_BLOCK_ASSERTIONS=1",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baicq.poetry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFA604FD2339B20D00199B66 /* Build configuration list for PBXProject "poetry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFA605162339B20E00199B66 /* Debug */,
+				CFA605172339B20E00199B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFA605182339B20E00199B66 /* Build configuration list for PBXNativeTarget "poetry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFA605192339B20E00199B66 /* Debug */,
+				CFA6051A2339B20E00199B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFA604FA2339B20D00199B66 /* Project object */;
+}
