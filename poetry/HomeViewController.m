@@ -54,6 +54,7 @@
         UIImage *image = [UIImage imageNamed:@"home"];
         UIImage *selImage = [UIImage imageNamed:@"home_c"];
         _poetryVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"唐诗" image:image selectedImage:selImage];
+        _poetryVC.title = @"唐诗";
     }
     return _poetryVC;
 }
@@ -64,6 +65,7 @@
         UIImage *image = [UIImage imageNamed:@"ResourceSelect"];
         UIImage *selImage = [UIImage imageNamed:@"ResourceSelect_c"];
         _sciVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"宋词" image:image selectedImage:selImage];
+        _sciVC.title = @"宋词";
     }
     return _sciVC;
 }
@@ -74,6 +76,7 @@
         UIImage *image = [UIImage imageNamed:@"me"];
         UIImage *selImage = [UIImage imageNamed:@"me_c"];
         _tagVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"标注" image:image selectedImage:selImage];
+        _tagVC.title = @"标注";
     }
     return _tagVC;
 }

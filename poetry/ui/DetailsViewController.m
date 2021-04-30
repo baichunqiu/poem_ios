@@ -141,8 +141,10 @@
         NSString *tag = [[alertController textFields] objectAtIndex:0].text;
         NSLog(@"tag = %@",tag);
         [self.manager updateTag:tag forTable:[self.data.type isEqualToString:TYPE_CI] ? TAB_CI : TAB_POEM andId:self.data.bid];
-        self.data.tag = tag;
-        self.lbTag.text = [NSString stringWithFormat:@"标签：%@",tag];
+        if (![tag isEqual:[NSNull null]] && ![@"" isEqualToString:tag]){
+            self.data.tag = tag;
+            self.lbTag.text = [NSString stringWithFormat:@"标签：%@",tag];
+        }
     }];
     [alertController addAction:noAction];
     [alertController addAction: yesAction];
@@ -153,7 +155,7 @@
 }
 
 -(void)refresh{
-    if (![_data.tag isEqual:[NSNull null]]){
+    if (![_data.tag isEqual:[NSNull null]] && ![@"" isEqualToString:_data.tag ]){
         self.lbTag.text = [NSString stringWithFormat:@"标签：%@",self.data.tag];
     }
     NSLog(@"txt = %@",self.data.txt);

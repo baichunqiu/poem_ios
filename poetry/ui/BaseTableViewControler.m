@@ -13,6 +13,7 @@
 #import "BasePeomCell.h"
 #import "DetailsViewController.h"
 #import "UIScrollView+EmptyDataSet.h"
+#import "WHToast.h"
 @interface BaseTableViewControler ()<UISearchBarDelegate,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
 
 @property(nonatomic,strong) NSMutableArray *data;
@@ -44,11 +45,19 @@
 
 //刷新数据
 -(void)refreshData:(NSArray*)curData withStatue:(BOOL)refresh{
+    if (nil == curData || curData.count == 0) {
+        [WHToast showErrorWithMessage:@"没有数据" originY:0 duration
+        :1 finishHandler:^{
+          NSLog(@"省略n行代码");
+        }];
+        return;
+    }
     if (refresh) {
       [self.data removeAllObjects];
     }
     [self.data addObjectsFromArray:curData];
     [self.tableView reloadData];
+    
 }
 
 //终止刷新动画
@@ -60,6 +69,7 @@
         [self.tableView.mj_footer endRefreshing];
     }
 }
+
 //设置SearchBar的背景色
 -(void)resetSearchBar:(UISearchBar*) _searchBar forColor:(UIColor*)color{
     for(int i =  0;i <_searchBar.subviews.count;i++){
@@ -78,7 +88,6 @@
             }
         }
     }
-//    _searchBar.backgroundColor = color;
 }
 
 //SearchBar点击搜索事件
@@ -87,21 +96,26 @@
     searchBar.text = @"";
     NSLog(@"searchInfo = %@",searchInfo);
     [self.view endEditing:YES];
-//    NSArray *poems = [self.dbManager searchPoem:searchInfo];
     NSArray *searchData = [self searchBy:searchInfo withDBManager:self.dbManager];
     [self refreshData:searchData withStatue:YES];
 }
 
 
-//- (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView{
-//    return [UIImage imageNamed:@"me"];
+//- (UIView *)customViewForEmptyDataSet:(UIScrollView *)scrollView {
+//    UIActivityIndicatorView *activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+//    [activityView startAnimating];
+//    return activityView;
 //}
 
-- (UIView *)customViewForEmptyDataSet:(UIScrollView *)scrollView {
-    UIActivityIndicatorView *activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    [activityView startAnimating];
-    return activityView;
-}
+//- (UIView *)customViewForEmptyDataSet:(UIScrollView *)scrollView {
+//    UILabel *lbTitle = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, KScreenWidth - 40, 30)];
+//    lbTitle.textAlignment = NSTextAlignmentCenter;
+//    lbTitle.textColor = UIColor.blackColor;
+//    lbTitle.textColor = UIColor.redColor;
+//    lbTitle.text = @"没有数据";
+//    lbTitle.font = kFont(14);
+//    return lbTitle;
+//}
 
 - (void)emptyDataSet:(UIScrollView *)scrollView didTapView:(UIView *)view{
     NSLog(@"点击了view");
@@ -120,12 +134,12 @@
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [weakself onRefresh];
     }];
+
+//    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+//        [weakself onLoad];
+//    }];
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(onLoad)];
     
-    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
-        [weakself onLoad];
-    }];
-    
-//    self.title = @"唐诗";
     self.dbManager = [[DBManager alloc] init];
     [self.dbManager openDatabase];
     self.data = [[NSMutableArray alloc] init];

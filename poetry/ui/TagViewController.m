@@ -14,6 +14,7 @@
 #import "DetailsViewController.h"
 #import "TagSearchViewController.h"
 #import "UIScrollView+EmptyDataSet.h"
+#import "WHToast.h"
 @interface TagViewController ()<UISearchBarDelegate,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
 
 @property(nonatomic,strong) NSMutableArray *data;
@@ -38,6 +39,10 @@
 
 //刷新数据
 -(void)refreshData:(NSArray*)curData withStatue:(BOOL)refresh{
+    if (nil == curData || curData.count == 0) {
+        [WHToast showErrorWithMessage:@"没有数据" originY:0 duration:1 finishHandler:nil];
+        return;
+    }
     if (refresh) {
         [self.data removeAllObjects];
     }
@@ -111,7 +116,7 @@
         [weakself onRefresh];
     }];
     
-    self.title = @"标签";
+//    self.title = @"标签";
     self.dbManager = [[DBManager alloc] init];
     [self.dbManager openDatabase];
     self.data = [[NSMutableArray alloc] init];
@@ -124,15 +129,15 @@
 //    [self.tableView setEditing:YES animated:YES];
 }
 
-- (UIView *)customViewForEmptyDataSet:(UIScrollView *)scrollView {
-    UILabel *lbTitle = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, KScreenWidth - 40, 30)];
-    lbTitle.textAlignment = NSTextAlignmentCenter;
-    lbTitle.textColor = UIColor.blackColor;
-    lbTitle.textColor = UIColor.redColor;
-    lbTitle.text = @"NO DATA";
-    lbTitle.font = kFont(14);
-    return lbTitle;
-}
+//- (UIView *)customViewForEmptyDataSet:(UIScrollView *)scrollView {
+//    UILabel *lbTitle = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, KScreenWidth - 40, 30)];
+//    lbTitle.textAlignment = NSTextAlignmentCenter;
+//    lbTitle.textColor = UIColor.blackColor;
+//    lbTitle.textColor = UIColor.redColor;
+//    lbTitle.text = @"没有标签";
+//    lbTitle.font = kFont(14);
+//    return lbTitle;
+//}
 
 - (void)emptyDataSet:(UIScrollView *)scrollView didTapView:(UIView *)view{
     NSLog(@"点击了view");

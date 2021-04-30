@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"宋词";
+//    self.title = @"宋词";
 }
 
 -(NSArray *)getByPage:(int)page withDBManager:(DBManager *)dbManager{

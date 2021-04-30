@@ -9,4 +9,5 @@ target 'poetry' do
   pod 'AFNetworking', '~> 3.0'
   pod 'FMDB'
   pod 'MJRefresh'
+  pod 'WHToast'
 end
